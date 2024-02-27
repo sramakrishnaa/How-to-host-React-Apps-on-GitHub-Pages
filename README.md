@@ -57,6 +57,7 @@ Once you've created your React app, navigate to your project directory using the
 cd my-react-app
 ```
 ### 3. Configure Your React App for Deployment
+
 Before deploying your React app to GitHub Pages, you need to make some changes to your ***package.json*** file.
 
 1. **Open package.json:**
@@ -69,7 +70,23 @@ Inside the *package.json* file, add a homepage property. This property should co
 ```
 
 3. **Replace your-github-username with** your GitHub username and your-repository-name with the name of your GitHub repository.
-
+4. **Executing the following commands** on your VS code terminal.
+```bash
+git init
+```
+```bash
+git add .
+```
+```bash
+git commit -m "first commit"
+```
+```bash
+git branch -M main
+```
+And then enter the following command in which we have to replace the *username* with the username of your GitHub account and the *repName* with the name of the repository which you have created.
+```bash
+git remote add origin https://github.com/username/repName.git
+```
 
 ### 4. Deploy Your React App to GitHub Pages
 Now that your React app is configured for deployment, follow these steps to deploy it to GitHub Pages.
